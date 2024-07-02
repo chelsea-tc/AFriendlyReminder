@@ -26,6 +26,8 @@ struct FriendListView: View {
     }
 }
 
+
+
 struct FriendListView_Previews: PreviewProvider {
     static var friends = Friend.sampleFriends
     static var previews: some View {

@@ -16,7 +16,7 @@ struct FriendCardView: View {
 
     
     var body: some View {
-        VStack(alignment: .leading) {
+        VStack {
             Text("\(name)")
                 .font(.headline)
             Spacer()
@@ -47,7 +47,7 @@ struct FriendCardView: View {
             .font(.caption)
         }
         .padding()
-        .frame(maxWidth: .infinity, maxHeight: 120)
+        .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: 120)
         .cornerRadius(10)
         .foregroundColor(Color.black.opacity(10))
     }
