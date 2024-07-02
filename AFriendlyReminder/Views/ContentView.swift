@@ -8,19 +8,28 @@
 import SwiftUI
 
 struct ContentView: View {
+    var friends = Friend.sampleFriends
+    @EnvironmentObject var selectedPageState: SelectedPageState
+    
     var body: some View {
-        VStack {
-            Spacer()
-            Text("Hello World")
-            Text("Hello World")
-            Spacer()
-            FooterView(doNothing: {})
+        Group {
+            switch selectedPageState.selectedPage {
+            case .home:
+                HomeView()
+            case .calendar:
+                CalendarView()
+            case .friend:
+                FriendListView(friends: friends)
+            }
         }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(Color(.systemBackground))
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(SelectedPageState())
     }
 }

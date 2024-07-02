@@ -2,15 +2,15 @@
 //  FooterView.swift
 //  AFriendlyReminder
 //
-//  Created by Chelsea Crawford on 27/06/2024.
+//  Created by Chelsea Crawford on 29/06/2024.
 //
 
 import SwiftUI
 
-struct FooterView: View {
+struct HeaderView: View {
     
     @EnvironmentObject var selectedPageState: SelectedPageState
-
+    
     var body: some View {
         HStack {
             Spacer()
@@ -21,9 +21,9 @@ struct FooterView: View {
             navigationButton(iconName: "person", targetPage: .friend)
             Spacer()
         }
-        .background(Theme.periwinkle.mainColor)
+        .background(.teal)
         .edgesIgnoringSafeArea(.bottom)
-    
+        .shadow(color: .gray, radius: 10)
     }
     
     private func navigationButton(iconName: String, targetPage: SelectedPage) -> some View {
@@ -52,9 +52,9 @@ struct FooterView: View {
     }
 }
 
-struct FooterView_Previews: PreviewProvider {
+struct HeaderView_Previews: PreviewProvider {
     static var previews: some View {
-        FooterView()
+        HeaderView()
             .environmentObject(SelectedPageState())
     }
 }

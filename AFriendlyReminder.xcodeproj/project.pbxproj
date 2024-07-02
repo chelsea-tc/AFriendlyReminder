@@ -15,10 +15,19 @@
 		5766B4462C2F3DF2000B2E58 /* EditFriendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5766B4452C2F3DF2000B2E58 /* EditFriendView.swift */; };
 		5766B4482C2F4D8B000B2E58 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5766B4472C2F4D8B000B2E58 /* CalendarView.swift */; };
 		5766B44A2C2F4ECF000B2E58 /* SelectedPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5766B4492C2F4ECF000B2E58 /* SelectedPage.swift */; };
+		5766B44C2C2F55B0000B2E58 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5766B44B2C2F55B0000B2E58 /* MainView.swift */; };
 		57C9345C2C2C955700BA1E45 /* AFriendlyReminderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C9345B2C2C955700BA1E45 /* AFriendlyReminderApp.swift */; };
 		57C9345E2C2C955700BA1E45 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C9345D2C2C955700BA1E45 /* ContentView.swift */; };
 		57C934602C2C955900BA1E45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57C9345F2C2C955900BA1E45 /* Assets.xcassets */; };
 		57C934632C2C955900BA1E45 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57C934622C2C955900BA1E45 /* Preview Assets.xcassets */; };
+		57CC3B312C306389007EAD48 /* CalendarFriendCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CC3B302C306389007EAD48 /* CalendarFriendCardView.swift */; };
+		57CC3B342C306490007EAD48 /* TrailingIconLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CC3B332C306490007EAD48 /* TrailingIconLabelStyle.swift */; };
+		57CC3B362C306D26007EAD48 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CC3B352C306D26007EAD48 /* HeaderView.swift */; };
+		57CC3B382C307077007EAD48 /* Colours.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CC3B372C307077007EAD48 /* Colours.swift */; };
+		57CC3B3A2C3070B3007EAD48 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CC3B392C3070B3007EAD48 /* Theme.swift */; };
+		57CC3B3C2C3074DC007EAD48 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CC3B3B2C3074DC007EAD48 /* Category.swift */; };
+		57CC3B3E2C314EFA007EAD48 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CC3B3D2C314EFA007EAD48 /* Friend.swift */; };
+		57CC3B402C31564F007EAD48 /* FriendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CC3B3F2C31564F007EAD48 /* FriendView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,11 +39,20 @@
 		5766B4452C2F3DF2000B2E58 /* EditFriendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditFriendView.swift; sourceTree = "<group>"; };
 		5766B4472C2F4D8B000B2E58 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		5766B4492C2F4ECF000B2E58 /* SelectedPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedPage.swift; sourceTree = "<group>"; };
+		5766B44B2C2F55B0000B2E58 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		57C934582C2C955700BA1E45 /* AFriendlyReminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AFriendlyReminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57C9345B2C2C955700BA1E45 /* AFriendlyReminderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFriendlyReminderApp.swift; sourceTree = "<group>"; };
 		57C9345D2C2C955700BA1E45 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		57C9345F2C2C955900BA1E45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57C934622C2C955900BA1E45 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		57CC3B302C306389007EAD48 /* CalendarFriendCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarFriendCardView.swift; sourceTree = "<group>"; };
+		57CC3B332C306490007EAD48 /* TrailingIconLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailingIconLabelStyle.swift; sourceTree = "<group>"; };
+		57CC3B352C306D26007EAD48 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		57CC3B372C307077007EAD48 /* Colours.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colours.swift; sourceTree = "<group>"; };
+		57CC3B392C3070B3007EAD48 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		57CC3B3B2C3074DC007EAD48 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		57CC3B3D2C314EFA007EAD48 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		57CC3B3F2C31564F007EAD48 /* FriendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +85,7 @@
 		57C9345A2C2C955700BA1E45 /* AFriendlyReminder */ = {
 			isa = PBXGroup;
 			children = (
+				57CC3B322C306480007EAD48 /* Styles */,
 				57C9346F2C2C968900BA1E45 /* Common */,
 				57C9346E2C2C95CD00BA1E45 /* Controllers */,
 				57C9346D2C2C95C600BA1E45 /* Views */,
@@ -98,6 +117,9 @@
 			isa = PBXGroup;
 			children = (
 				5766B4492C2F4ECF000B2E58 /* SelectedPage.swift */,
+				57CC3B392C3070B3007EAD48 /* Theme.swift */,
+				57CC3B3B2C3074DC007EAD48 /* Category.swift */,
+				57CC3B3D2C314EFA007EAD48 /* Friend.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -105,14 +127,14 @@
 		57C9346D2C2C95C600BA1E45 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				57CC3B2F2C306340007EAD48 /* Settings */,
+				57CC3B2E2C306339007EAD48 /* FriendPage */,
+				57CC3B2D2C306333007EAD48 /* HomePage */,
+				57CC3B2C2C306326007EAD48 /* CalendarPage */,
 				57C9345D2C2C955700BA1E45 /* ContentView.swift */,
 				5766B4392C2E0CA3000B2E58 /* FooterView.swift */,
-				5766B43D2C2F3D9F000B2E58 /* HomeView.swift */,
-				5766B43F2C2F3DB0000B2E58 /* FriendListView.swift */,
-				5766B4412C2F3DCD000B2E58 /* FriendCardView.swift */,
-				5766B4432C2F3DE4000B2E58 /* AddFriendView.swift */,
-				5766B4452C2F3DF2000B2E58 /* EditFriendView.swift */,
-				5766B4472C2F4D8B000B2E58 /* CalendarView.swift */,
+				5766B44B2C2F55B0000B2E58 /* MainView.swift */,
+				57CC3B352C306D26007EAD48 /* HeaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -139,6 +161,51 @@
 			path = Images;
 			sourceTree = "<group>";
 		};
+		57CC3B2C2C306326007EAD48 /* CalendarPage */ = {
+			isa = PBXGroup;
+			children = (
+				5766B4472C2F4D8B000B2E58 /* CalendarView.swift */,
+				57CC3B302C306389007EAD48 /* CalendarFriendCardView.swift */,
+			);
+			path = CalendarPage;
+			sourceTree = "<group>";
+		};
+		57CC3B2D2C306333007EAD48 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				5766B43D2C2F3D9F000B2E58 /* HomeView.swift */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
+		57CC3B2E2C306339007EAD48 /* FriendPage */ = {
+			isa = PBXGroup;
+			children = (
+				5766B43F2C2F3DB0000B2E58 /* FriendListView.swift */,
+				5766B4452C2F3DF2000B2E58 /* EditFriendView.swift */,
+				5766B4432C2F3DE4000B2E58 /* AddFriendView.swift */,
+				5766B4412C2F3DCD000B2E58 /* FriendCardView.swift */,
+				57CC3B3F2C31564F007EAD48 /* FriendView.swift */,
+			);
+			path = FriendPage;
+			sourceTree = "<group>";
+		};
+		57CC3B2F2C306340007EAD48 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		57CC3B322C306480007EAD48 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				57CC3B332C306490007EAD48 /* TrailingIconLabelStyle.swift */,
+				57CC3B372C307077007EAD48 /* Colours.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -155,6 +222,8 @@
 			dependencies = (
 			);
 			name = AFriendlyReminder;
+			packageProductDependencies = (
+			);
 			productName = AFriendlyReminder;
 			productReference = 57C934582C2C955700BA1E45 /* AFriendlyReminder.app */;
 			productType = "com.apple.product-type.application";
@@ -183,6 +252,8 @@
 				Base,
 			);
 			mainGroup = 57C9344F2C2C955700BA1E45;
+			packageReferences = (
+			);
 			productRefGroup = 57C934592C2C955700BA1E45 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -210,15 +281,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				5766B4462C2F3DF2000B2E58 /* EditFriendView.swift in Sources */,
+				57CC3B382C307077007EAD48 /* Colours.swift in Sources */,
 				5766B44A2C2F4ECF000B2E58 /* SelectedPage.swift in Sources */,
 				5766B43A2C2E0CA3000B2E58 /* FooterView.swift in Sources */,
 				5766B43E2C2F3D9F000B2E58 /* HomeView.swift in Sources */,
 				57C9345E2C2C955700BA1E45 /* ContentView.swift in Sources */,
 				57C9345C2C2C955700BA1E45 /* AFriendlyReminderApp.swift in Sources */,
 				5766B4482C2F4D8B000B2E58 /* CalendarView.swift in Sources */,
+				5766B44C2C2F55B0000B2E58 /* MainView.swift in Sources */,
+				57CC3B3A2C3070B3007EAD48 /* Theme.swift in Sources */,
+				57CC3B342C306490007EAD48 /* TrailingIconLabelStyle.swift in Sources */,
+				57CC3B3C2C3074DC007EAD48 /* Category.swift in Sources */,
 				5766B4442C2F3DE4000B2E58 /* AddFriendView.swift in Sources */,
 				5766B4422C2F3DCD000B2E58 /* FriendCardView.swift in Sources */,
+				57CC3B312C306389007EAD48 /* CalendarFriendCardView.swift in Sources */,
+				57CC3B3E2C314EFA007EAD48 /* Friend.swift in Sources */,
 				5766B4402C2F3DB0000B2E58 /* FriendListView.swift in Sources */,
+				57CC3B402C31564F007EAD48 /* FriendView.swift in Sources */,
+				57CC3B362C306D26007EAD48 /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +362,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -335,6 +416,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
