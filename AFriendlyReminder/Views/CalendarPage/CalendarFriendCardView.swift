@@ -8,35 +8,34 @@
 import SwiftUI
 
 struct CalendarFriendCardView: View {
-    let name: String
-    let time: String
+    let friend: Friend
     
     var body: some View {
         VStack(alignment: .leading) {
-            Text("\(name)")
+            Text("\(friend.name)")
                 .font(.headline)
             Spacer()
             HStack {
                 Text("Next Reminder: ")
                 Spacer()
-                Label("\(time)", systemImage: "clock")
+                Label("\(friend.timeString)", systemImage: "clock")
                     .labelStyle(.trailingIcon)
             }
             .font(.caption)
         }
         .padding()
         .frame(maxWidth: .infinity, maxHeight: 80)
-        .background(Color.white)
+        .background(.white)
         .cornerRadius(10)
-        .shadow(color: Color.black.opacity(0.1), radius: 5)
+        .shadow(color: Theme.lavender.mainColor, radius: 5)
         .foregroundColor(Color.black.opacity(10))
     }
 }
 
-struct CalendarFriendCardView_Previews: PreviewProvider {
-    static var name = "Test Name"
-    static var time = "10:00-18:00"
+struct CalendarFriendCardView_Previews:
+    PreviewProvider {
+    static var friend = Friend.sampleFriends[0]
     static var previews: some View {
-        CalendarFriendCardView(name: name, time: time)
+        CalendarFriendCardView(friend: friend)
     }
 }

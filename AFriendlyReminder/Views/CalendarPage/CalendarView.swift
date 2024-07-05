@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct CalendarView: View {
+    var friends: [Friend]
     @State private var date = Date()
     
     let dateRange: ClosedRange<Date> = {
@@ -45,19 +46,24 @@ struct CalendarView: View {
                 
             }
             .padding(10)
-            VStack {
-                CalendarFriendCardView(name: "Friend Name 1", time: "18:00-21:00")
-                CalendarFriendCardView(name: "Friend Name 2", time: "12:00-20:00")
+            ScrollView {
+                ForEach(friends, id: \.id) { friend in
+                    NavigationLink (destination: FriendView(friend: friend)) {
+                        CalendarFriendCardView(friend: friend)
+                    }
+                }
+                .padding(10)
             }
-            .padding(10)
-            Spacer()
+           
         }
-        .padding(10)
+        .background(.white)
+        .padding(5)
     }
 }
 
 struct CalendarView_Previews: PreviewProvider {
+    static var friends = Friend.sampleFriends
     static var previews: some View {
-        CalendarView()
+        CalendarView(friends: friends)
     }
 }

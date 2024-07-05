@@ -28,6 +28,8 @@
 		57CC3B3C2C3074DC007EAD48 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CC3B3B2C3074DC007EAD48 /* Category.swift */; };
 		57CC3B3E2C314EFA007EAD48 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CC3B3D2C314EFA007EAD48 /* Friend.swift */; };
 		57CC3B402C31564F007EAD48 /* FriendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CC3B3F2C31564F007EAD48 /* FriendView.swift */; };
+		57E8CBED2C34545B00FBB68A /* ReminderInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E8CBEC2C34545B00FBB68A /* ReminderInterval.swift */; };
+		57F729B82C372E910042D3FA /* ImportantDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F729B72C372E910042D3FA /* ImportantDate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +55,8 @@
 		57CC3B3B2C3074DC007EAD48 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		57CC3B3D2C314EFA007EAD48 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		57CC3B3F2C31564F007EAD48 /* FriendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendView.swift; sourceTree = "<group>"; };
+		57E8CBEC2C34545B00FBB68A /* ReminderInterval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderInterval.swift; sourceTree = "<group>"; };
+		57F729B72C372E910042D3FA /* ImportantDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportantDate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +124,8 @@
 				57CC3B392C3070B3007EAD48 /* Theme.swift */,
 				57CC3B3B2C3074DC007EAD48 /* Category.swift */,
 				57CC3B3D2C314EFA007EAD48 /* Friend.swift */,
+				57E8CBEC2C34545B00FBB68A /* ReminderInterval.swift */,
+				57F729B72C372E910042D3FA /* ImportantDate.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -283,7 +289,9 @@
 				5766B4462C2F3DF2000B2E58 /* EditFriendView.swift in Sources */,
 				57CC3B382C307077007EAD48 /* Colours.swift in Sources */,
 				5766B44A2C2F4ECF000B2E58 /* SelectedPage.swift in Sources */,
+				57F729B82C372E910042D3FA /* ImportantDate.swift in Sources */,
 				5766B43A2C2E0CA3000B2E58 /* FooterView.swift in Sources */,
+				57E8CBED2C34545B00FBB68A /* ReminderInterval.swift in Sources */,
 				5766B43E2C2F3D9F000B2E58 /* HomeView.swift in Sources */,
 				57C9345E2C2C955700BA1E45 /* ContentView.swift in Sources */,
 				57C9345C2C2C955700BA1E45 /* AFriendlyReminderApp.swift in Sources */,
