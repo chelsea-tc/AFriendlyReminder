@@ -10,54 +10,22 @@ import SwiftUI
 struct FriendView: View {
     var friend: Friend
     @State private var notes: String = ""
-    
-//    VStack(alignment: .leading) {
-//        Text("\(name)")
-//            .font(.headline)
-//        Spacer()
-//        VStack {
-//            Spacer()
-//            HStack {
-//                Text("Category: ")
-//                Spacer()
-//                Label("\(category.name)", systemImage: category.icon)
-//                    .labelStyle(.trailingIcon)
-//            }
-//            Spacer()
-//            HStack {
-//                Text("Next Reminder: ")
-//                Spacer()
-//                Label("\(next)", systemImage: "calendar")
-//                    .labelStyle(.trailingIcon)
-//            }
-//            Spacer()
-//            HStack {
-//                Text("Time Range: ")
-//                Spacer()
-//                Label("\(time)", systemImage: "clock")
-//                    .labelStyle(.trailingIcon)
-//            }
-//            Spacer()
-//        }
-//        .font(.caption)
-//    }
-//    .padding()
-//    .frame(maxWidth: .infinity, maxHeight: 120)
-//    .cornerRadius(10)
-//    .foregroundColor(Color.black.opacity(10))
+
 
     var body: some View {
         List {
             // Info Section
             Section(header: Text("Info").font(.headline).foregroundColor(Theme.navy.mainColor)) {
+                infoRow(label: "Name", systemImage: "person", value: friend.name)
                 infoRow(label: "Category", systemImage: "paintpalette", value: friend.category.name, backgroundColor: friend.category.catColor)
                 infoRow(label: "Next Reminder", systemImage: "calendar", value: friend.next)
-                infoRow(label: "Time Interval", systemImage: "clock", value: friend.time)
+                infoRow(label: "Time Interval", systemImage: "clock", value: friend.timeString)
             }
             
             Section(header: Text("Important Dates").font(.headline).foregroundColor(Theme.navy.mainColor)) {
-                dateRow(date: "12/03/24", frequency: "yearly")
-                dateRow(date: "10/12/23", frequency: "monthly")
+                ForEach(friend.importantDates, id: \.id) { date in
+                    importantDateRow(importantDate: date)
+                }
             }
             
             Section(header: Text("Notes").font(.headline).foregroundColor(Theme.navy.mainColor)) {
@@ -85,6 +53,7 @@ struct FriendView: View {
         }
     }
     
+    
     // Custom Views for Rows
     private func infoRow(label: String, systemImage: String, value: String, backgroundColor: Color? = nil) -> some View {
         HStack {
@@ -99,11 +68,12 @@ struct FriendView: View {
         .padding(.vertical, 4)
     }
     
-    private func dateRow(date: String, frequency: String) -> some View {
+    
+    private func importantDateRow(importantDate: ImportantDate) -> some View {
         HStack {
-            Label(date, systemImage: "calendar")
+            Label(importantDate.stringFormat, systemImage: "calendar")
             Spacer()
-            Text(frequency)
+            Text(importantDate.frequency.name)
                 .padding(8)
                 .font(.caption)
         }

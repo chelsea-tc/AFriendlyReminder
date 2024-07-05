@@ -12,7 +12,7 @@ struct MainView: View {
     @StateObject private var selectedPageState = SelectedPageState()
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             VStack {
                 ContentView()
                 FooterView()
