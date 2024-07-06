@@ -21,16 +21,16 @@ struct MainView: View {
         }
     }
     
-    private var displayTitle: String {
-        switch selectedPageState.selectedPage {
-        case .home:
-            return "Home"
-        case .calendar:
-            return "Calendar"
-        case .friend:
-            return "Friend List"
-        }
-    }
+//    private var displayTitle: String {
+//        switch selectedPageState.selectedPage {
+//        case .home:
+//            return "Home"
+//        case .calendar:
+//            return "Calendar"
+//        case .friend:
+//            return "Friend List"
+//        }
+//    }
 }
 
 struct MainView_Previews: PreviewProvider {

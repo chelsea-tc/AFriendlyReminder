@@ -17,7 +17,7 @@ struct ContentView: View {
             case .home:
                 HomeView()
             case .calendar:
-                CalendarView(friends: friends)
+                CalendarViewNew(friends: friends)
             case .friend:
                 FriendListView(friends: friends)
             }

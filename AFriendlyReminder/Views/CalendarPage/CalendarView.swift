@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import MooCal
 
 struct CalendarView: View {
     var friends: [Friend]
